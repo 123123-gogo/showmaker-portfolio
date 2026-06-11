@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showmaker - 用可爱设计治愈世界 | 设计师个人主页">
+    <meta name="keywords" content="设计师,可爱,个人主页,作品集,创意,UI设计">
+    <title>🦄 Showmaker - 设计师个人主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- ==================== 飘落星星容器 ==================== -->
+    <div class="sparkles-container" id="sparklesContainer"></div>
+
+    <!-- ==================== 自定义光标 ==================== -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- ==================== 导航栏 ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-emoji">🦄</span>
+                <span class="logo-text">Showmaker</span>
+                <span class="logo-dot">.</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">🏠 首页</a>
+                <a href="#about" class="nav-link" data-section="about">🌸 关于</a>
+                <a href="#skills" class="nav-link" data-section="skills">⭐ 技能</a>
+                <a href="#portfolio" class="nav-link" data-section="portfolio">🎨 作品</a>
+                <a href="#fun" class="nav-link" data-section="fun">💖 日常</a>
+                <a href="#contact" class="nav-link" data-section="contact">✉️ 联系</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== 首页 Hero ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <!-- 装饰漂浮emoji -->
+        <div class="floating-emoji emoji-1">🌸</div>
+        <div class="floating-emoji emoji-2">✨</div>
+        <div class="floating-emoji emoji-3">🎀</div>
+        <div class="floating-emoji emoji-4">💖</div>
+        <div class="floating-emoji emoji-5">⭐</div>
+        <div class="floating-emoji emoji-6">🍀</div>
+        <div class="floating-emoji emoji-7">🦋</div>
+        <div class="floating-emoji emoji-8">🌷</div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-emoji">🌈</span>
+                    <span>开放合作中</span>
+                </div>
+                <p class="hero-greeting">哈喽～ 我是</p>
+                <h1 class="hero-title">
+                    <span class="title-line">Showmaker</span>
+                    <span class="title-sub">
+                        <span class="sub-emoji">🎨</span> 创意设计师 <span class="sub-emoji">💫</span>
+                    </span>
+                </h1>
+                <p class="hero-description">
+                    一个用<span class="highlight">可爱治愈世界</span>的设计师 ✨
+                    <br>专注于<span class="highlight">品牌设计</span>与<span class="highlight">插画创作</span>，
+                    <br>相信每个设计都应该带着一点点<span class="highlight">魔法</span> 🌟
+                </p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <span>✨ 查看作品</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>💌 联系我</span>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="#" class="social-icon" title="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="#" class="social-icon" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" title="小红书"><i class="fas fa-heart"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring avatar-ring-2"></div>
+                    <div class="avatar-placeholder">
+                        <span class="avatar-emoji">🦄</span>
+                        <span class="avatar-text">你的照片</span>
+                    </div>
+                    <!-- 环绕小装饰 -->
+                    <div class="orbit-dot dot-1">⭐</div>
+                    <div class="orbit-dot dot-2">🌸</div>
+                    <div class="orbit-dot dot-3">💎</div>
+                    <div class="orbit-dot dot-4">🎀</div>
+                </div>
+                <div class="floating-card card-1">
+                    <span class="card-emoji">🎨</span>
+                    <span>UI 设计</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="card-emoji">🌸</span>
+                    <span>品牌设计</span>
+                </div>
+                <div class="floating-card card-3">
+                    <span class="card-emoji">💡</span>
+                    <span>创意插画</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动探索更多 ✨</span>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 关于我 ==================== -->
+    <section class="about section" id="about">
+        <!-- 装饰分隔线 -->
+        <div class="section-divider">
+            <span>🌸</span><span>⭐</span><span>🎀</span><span>⭐</span><span>🌸</span>
+        </div>
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">🌸 ABOUT ME</span>
+                <h2 class="section-title">关于我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-img-placeholder">
+                        <span class="about-img-emoji">🦄</span>
+                        <span>你的照片</span>
+                    </div>
+                    <div class="about-exp-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-label">年设计经验</span>
+                        <span class="badge-star">⭐</span>
+                    </div>
+                    <!-- 小贴纸 -->
+                    <div class="sticker sticker-1">💖</div>
+                    <div class="sticker sticker-2">🌟</div>
+                </div>
+                <div class="about-content reveal">
+                    <h3>用设计<span class="highlight">治愈</span>世界的可爱设计师 🎀</h3>
+                    <p class="about-text">
+                        哈喽！我是 Showmaker，一个对世界充满好奇心、对设计充满热情的创意人。
+                        毕业于中国美术学院视觉传达专业，拥有 5 年以上品牌设计和插画创作经验。
+                    </p>
+                    <p class="about-text">
+                        我相信<b>好的设计能让人会心一笑</b>——无论是一个温暖的 Logo、
+                        一个治愈的 App 界面，还是一张让人心情变好的插画。
+                        每个作品都藏着我对生活的小小热爱 🌷
+                    </p>
+                    <p class="about-text">
+                        工作之余，我是一个猫奴 🐱、手账爱好者 📒、奶茶品鉴师 🧋、
+                        以及半个烘焙新手 🍰。这些生活中的小确幸，也常常成为我设计的灵感来源。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="200">0</span>
+                            <span class="stat-label">✨ 完成项目</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">💕 合作客户</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">🏆 获得奖项</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">🐱 收养猫咪</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <span>📄 下载简历</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 技能 ==================== -->
+    <section class="skills section" id="skills">
+        <div class="section-divider">
+            <span>💎</span><span>🌈</span><span>🦋</span><span>🌈</span><span>💎</span>
+        </div>
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">⭐ MY SKILLS</span>
+                <h2 class="section-title">专业技能</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <span class="skill-emoji">🎨</span>
+                    </div>
+                    <h3>品牌设计</h3>
+                    <p>Logo设计、VI系统、品牌手册，打造独特又可爱的品牌形象</p>
+                    <div class="skill-tags">
+                        <span>Logo</span><span>VI</span><span>Branding</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <span class="skill-emoji">📱</span>
+                    </div>
+                    <h3>UI/UX 设计</h3>
+                    <p>网页设计、App界面、交互原型，让每个像素都精致可爱</p>
+                    <div class="skill-tags">
+                        <span>Figma</span><span>XD</span><span>Sketch</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <span class="skill-emoji">🖌️</span>
+                    </div>
+                    <h3>插画绘制</h3>
+                    <p>治愈系插画、IP形象设计、贴纸表情包，用画笔传递温暖</p>
+                    <div class="skill-tags">
+                        <span>PS</span><span>AI</span><span>Procreate</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <span class="skill-emoji">🎬</span>
+                    </div>
+                    <h3>动效设计</h3>
+                    <p>交互动画、MG动画、趣味动效，让设计充满生命力</p>
+                    <div class="skill-tags">
+                        <span>AE</span><span>Principle</span><span>Rive</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 软件技能条 -->
+            <div class="skill-bars reveal">
+                <h3 class="skill-bars-title">🛠️ 工具熟练度</h3>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-info">
+                        <span>🎨 Figma</span><span>95%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width: 0%" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-info">
+                        <span>🖼️ Adobe Photoshop</span><span>90%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width: 0%" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-info">
+                        <span>✏️ Adobe Illustrator</span><span>88%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width: 0%" data-width="88%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-info">
+                        <span>🎬 Adobe After Effects</span><span>75%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width: 0%" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-info">
+                        <span>🖊️ Procreate</span><span>92%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width: 0%" data-width="92%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 作品集 ==================== -->
+    <section class="portfolio section" id="portfolio">
+        <div class="section-divider">
+            <span>✨</span><span>🎨</span><span>💫</span><span>🎨</span><span>✨</span>
+        </div>
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">🎨 PORTFOLIO</span>
+                <h2 class="section-title">精选作品</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">🌟 全部</button>
+                <button class="filter-btn" data-filter="brand">🏷️ 品牌设计</button>
+                <button class="filter-btn" data-filter="ui">📱 UI/UX</button>
+                <button class="filter-btn" data-filter="illust">🖌️ 插画</button>
+                <button class="filter-btn" data-filter="motion">🎬 动效</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal" data-category="brand">
+                    <div class="portfolio-img">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <span class="pf-emoji">🧋</span>
+                            <span>茶饮品牌</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>「小确茶」新式茶饮品牌全案</h3>
+                            <p>品牌策略 / Logo设计 / VI系统 / 空间视觉</p>
+                            <span class="pf-tag">品牌全案</span>
+                            <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" data-category="ui">
+                    <div class="portfolio-img">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #fbc2eb 0%, #a18cd1 100%);">
+                            <span class="pf-emoji">🌱</span>
+                            <span>健康 App</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>「萌芽」健康习惯养成 App</h3>
+                            <p>UI/UX 设计 / 插画系统 / 动效设计</p>
+                            <span class="pf-tag">UI/UX</span>
+                            <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" data-category="illust">
+                    <div class="portfolio-img">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
+                            <span class="pf-emoji">🐱</span>
+                            <span>IP 形象</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>「团子猫」治愈系 IP 设计</h3>
+                            <p>角色设计 / 表情包 / 周边延展</p>
+                            <span class="pf-tag">插画</span>
+                            <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" data-category="brand">
+                    <div class="portfolio-img">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #fddb92 0%, #d1fdff 100%);">
+                            <span class="pf-emoji">🍰</span>
+                            <span>烘焙品牌</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>「云朵烘焙」品牌视觉设计</h3>
+                            <p>Logo设计 / 包装设计 / 品牌插画</p>
+                            <span class="pf-tag">品牌设计</span>
+                            <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" data-category="motion">
+                    <div class="portfolio-img">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+                            <span class="pf-emoji">💫</span>
+                            <span>动效合集</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>「Magic Spark」品牌动效合集</h3>
+                            <p>Logo动画 / MG动画 / 加载动效</p>
+                            <span class="pf-tag">动效</span>
+                            <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" data-category="illust">
+                    <div class="portfolio-img">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            <span class="pf-emoji">📒</span>
+                            <span>手账插画</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>「今日小美好」日常手账插画系列</h3>
+                            <p>插画系列 / 贴纸设计 / 文创延展</p>
+                            <span class="pf-tag">插画</span>
+                            <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 日常 / 趣味 ==================== -->
+    <section class="fun section" id="fun">
+        <div class="section-divider">
+            <span>💖</span><span>🐱</span><span>🍰</span><span>🐱</span><span>💖</span>
+        </div>
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">💖 LIFE & FUN</span>
+                <h2 class="section-title">工作之外</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">设计之外，还有这些让我闪闪发光的小爱好 ✨</p>
+            </div>
+            <div class="fun-grid">
+                <div class="fun-card reveal">
+                    <div class="fun-card-inner">
+                        <span class="fun-emoji">🐱</span>
+                        <h3>猫奴日常</h3>
+                        <p>家里有三只毛孩子：团子、布丁和奶盖。每天被它们治愈，也是我最好的设计灵感来源 🐾</p>
+                    </div>
+                </div>
+                <div class="fun-card reveal">
+                    <div class="fun-card-inner">
+                        <span class="fun-emoji">🧋</span>
+                        <h3>奶茶品鉴师</h3>
+                        <p>立志喝遍全城奶茶店！最爱芋泥波波，三分糖去冰。新店开业必打卡，有同好吗？</p>
+                    </div>
+                </div>
+                <div class="fun-card reveal">
+                    <div class="fun-card-inner">
+                        <span class="fun-emoji">📒</span>
+                        <h3>手账达人</h3>
+                        <p>从2019年开始做手账，胶带贴纸收集癖。记录生活中的每一个小确幸瞬间 📝</p>
+                    </div>
+                </div>
+                <div class="fun-card reveal">
+                    <div class="fun-card-inner">
+                        <span class="fun-emoji">🍰</span>
+                        <h3>烘焙新手</h3>
+                        <p>最近迷上了烘焙！虽然翻车率高达60%，但成功时的成就感无与伦比。招牌是巴斯克芝士蛋糕~</p>
+                    </div>
+                </div>
+                <div class="fun-card reveal">
+                    <div class="fun-card-inner">
+                        <span class="fun-emoji">🎮</span>
+                        <h3>休闲玩家</h3>
+                        <p>动森500+小时岛民代表，星露谷农夫。最爱治愈系游戏，画面好看的设计我都会反复研究 ✨</p>
+                    </div>
+                </div>
+                <div class="fun-card reveal">
+                    <div class="fun-card-inner">
+                        <span class="fun-emoji">🌸</span>
+                        <h3>植物杀手</h3>
+                        <p>正在努力学习养花中...目前幸存者：一盆多肉和一株绿萝。目标是拥有一个治愈系小阳台 🌿</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 联系我 ==================== -->
+    <section class="contact section" id="contact">
+        <div class="section-divider">
+            <span>💌</span><span>✨</span><span>💕</span><span>✨</span><span>💌</span>
+        </div>
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">✉️ CONTACT ME</span>
+                <h2 class="section-title">联系我</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">有项目想合作？还是想一起喝杯奶茶？都欢迎找我呀～ 💕</p>
+            </div>
+            <div class="contact-grid reveal">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="contact-emoji">📧</span>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>邮箱</h4>
+                            <p>hello@showmaker.design</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="contact-emoji">📍</span>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>位置</h4>
+                            <p>中国 · 杭州</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="contact-emoji">💬</span>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>微信</h4>
+                            <p>Showmaker_Design</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="contact-emoji">📱</span>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>小红书</h4>
+                            <p>@Showmaker设计日记</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#" class="contact-social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="contact-social-link"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="contact-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="contact-social-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="contact-social-link"><i class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>👤 你的名字</label>
+                            <input type="text" placeholder="怎么称呼你呀？" required>
+                        </div>
+                        <div class="form-group">
+                            <label>📧 邮箱地址</label>
+                            <input type="email" placeholder="我会用这个邮箱回复你~" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>🎯 项目类型</label>
+                        <select>
+                            <option value="">请选择项目类型～</option>
+                            <option value="brand">🏷️ 品牌设计</option>
+                            <option value="ui">📱 UI/UX 设计</option>
+                            <option value="illust">🖌️ 插画合作</option>
+                            <option value="motion">🎬 动效设计</option>
+                            <option value="ip">🧸 IP 形象设计</option>
+                            <option value="other">💡 其他创意项目</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>💬 项目描述</label>
+                        <textarea rows="5" placeholder="跟我说说你的想法吧～越详细越好哦！"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>💌 发送消息</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 页脚 ==================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span>🦄 Showmaker.</span>
+            </div>
+            <p class="footer-text">© 2025 Showmaker. Made with 💖 and lots of ☕</p>
+            <p class="footer-credit">用心设计 · 治愈世界 · 保持可爱 ✨</p>
+            <div class="footer-emojis">
+                <span>🌸</span><span>⭐</span><span>🎀</span><span>💖</span><span>🦄</span><span>🌈</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== 回到顶部按钮（可爱版） ==================== -->
+    <button class="back-to-top" id="backToTop">
+        <span class="btt-emoji">🦄</span>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
